@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.esprit.je_suis_enceinte.R;
 
-public class PoidsActivity extends AppCompatActivity {
+public class VentreActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_poids);
+        setContentView(R.layout.activity_ventre);
     }
 }

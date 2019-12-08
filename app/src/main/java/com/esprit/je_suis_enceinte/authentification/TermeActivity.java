@@ -14,6 +14,7 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 
 import com.esprit.je_suis_enceinte.MainActivity;
+import com.esprit.je_suis_enceinte.NavigationActivity;
 import com.esprit.je_suis_enceinte.R;
 
 import java.text.SimpleDateFormat;
@@ -23,7 +24,7 @@ public class TermeActivity extends AppCompatActivity {
 
     final Calendar myCalendar = Calendar.getInstance();
     EditText dateterme;
-    Button btn_calculer;
+    Button btn_calculer,btn_Commencer;
 
     private SharedPreferences mPreferences;
     public static final String sharedPrefFile= "com.esprit.je_suis_enceinte";
@@ -72,6 +73,15 @@ public class TermeActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent CalculateurIntent = new Intent(TermeActivity.this, CalculateurActivity.class);
                 startActivity(CalculateurIntent);
+            }
+        });
+
+        btn_Commencer = findViewById(R.id.btn_Commencer);
+        btn_Commencer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent CommencerIntent = new Intent(TermeActivity.this, NavigationActivity.class);
+                startActivity(CommencerIntent);
             }
         });
 

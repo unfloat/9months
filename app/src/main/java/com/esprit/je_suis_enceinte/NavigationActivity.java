@@ -52,16 +52,21 @@ public class NavigationActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu, menu);
         return true;
     }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
 
             case R.id.action_profile:
-                Intent SignupIntent = new Intent(NavigationActivity.this, ProfileActivity.class);
-                startActivity(SignupIntent);
+                Intent ProfilIntent = new Intent(NavigationActivity.this, ProfileActivity.class);
+                startActivity(ProfilIntent);
                 return true;
-            case R.id.action_settings:
-                Toast.makeText(this,R.string.action_settings, Toast.LENGTH_LONG).show();
+            case R.id.action_parametres:
+                Toast.makeText(this,R.string.action_parametres, Toast.LENGTH_LONG).show();
+                return true;
+            case R.id.action_deconnexion:
+                Intent deconnexionIntent = new Intent(NavigationActivity.this, LoginActivity.class);
+                startActivity(deconnexionIntent);
                 return true;
 
         }
