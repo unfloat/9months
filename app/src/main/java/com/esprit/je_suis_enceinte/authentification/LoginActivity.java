@@ -12,7 +12,6 @@ import android.widget.Toast;
 
 import com.esprit.je_suis_enceinte.ContainerActivity;
 import com.esprit.je_suis_enceinte.MainActivity;
-import com.esprit.je_suis_enceinte.MenuActivity;
 import com.esprit.je_suis_enceinte.NavigationActivity;
 import com.esprit.je_suis_enceinte.R;
 import com.esprit.je_suis_enceinte.retrofit.RetrofitClient;
