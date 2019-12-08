@@ -31,8 +31,8 @@ public class MainActivity extends AppCompatActivity {
         btn_registrer = findViewById(R.id.btn_registrer);
         btn_registrer.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent SignupIntent = new Intent(MainActivity.this, SignupActivity.class);
-                startActivity(SignupIntent);
+                Intent Signup = new Intent(MainActivity.this, SignupActivity.class);
+                startActivity(Signup);
             }
         });
 
