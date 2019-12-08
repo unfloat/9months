@@ -17,6 +17,8 @@ import android.widget.Toast;
 
 import com.esprit.je_suis_enceinte.authentification.LoginActivity;
 import com.esprit.je_suis_enceinte.authentification.SignupActivity;
+import com.esprit.je_suis_enceinte.fragments.BlankFragment;
+import com.esprit.je_suis_enceinte.fragments.PrenomsFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class NavigationActivity extends AppCompatActivity {
@@ -24,9 +26,8 @@ public class NavigationActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_navigation);
-
-
         BottomNavigationView navView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
@@ -36,6 +37,8 @@ public class NavigationActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(navView, navController);
+
+
     }
 
     public void loadFragment(Fragment fragment) {

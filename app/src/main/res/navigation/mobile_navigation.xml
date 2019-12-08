@@ -26,4 +26,10 @@
         android:name="com.esprit.je_suis_enceinte.ui.Bebe.BebeFragment"
         android:label="@string/title_bebe"
         tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_bebe"
+        android:name="com.esprit.je_suis_enceinte.ui.Bebe.BebeFragment"
+        android:label="@string/title_bebe"
+        tools:layout="@layout/fragment_notifications" />
 </navigation>
