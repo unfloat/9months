@@ -11,18 +11,16 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.esprit.je_suis_enceinte.R;
-
 import com.esprit.je_suis_enceinte.adapters.RecyclerViewListPrenomsAdapter;
 import com.esprit.je_suis_enceinte.models.PrenomsModel;
 
-public class PrenomsFragment extends Fragment {
-
+public class CalendarFragment extends Fragment {
     private View view;
     private Context appContext;
 
 
-    public PrenomsFragment() {
-        }
+    public CalendarFragment() {
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -50,3 +48,5 @@ public class PrenomsFragment extends Fragment {
 
     }
 }
+
+

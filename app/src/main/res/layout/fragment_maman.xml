@@ -6,14 +6,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#D3D3D3"
-    android:weightSum="10"
 >
 
     <GridLayout
         android:id="@+id/mainGrid"
         android:layout_width="match_parent"
-        android:layout_height="526dp"
-        android:layout_weight="10"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
         android:alignmentMode="alignMargins"
         android:columnCount="2"
         android:columnOrderPreserved="false"
@@ -25,6 +24,7 @@
 
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/bib"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_rowWeight="1"
@@ -44,14 +44,14 @@
 
                 <ImageView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="116dp"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/mother1" />
+                    android:src="@drawable/bib" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="138dp"
                     android:layout_height="wrap_content"
-                    android:text="Text"
+                    android:text="Prenoms"
                     android:textAlignment="center"
                     android:textColor="#000"
                     android:textSize="18sp"
@@ -64,6 +64,7 @@
         <!-- COLUMN 2  -->
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/calendar"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_rowWeight="1"
@@ -105,6 +106,7 @@
         <!-- COLUMN 1  -->
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/scale"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_rowWeight="1"
@@ -144,6 +146,7 @@
         <!-- COLUMN 2  -->
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/tummy"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_rowWeight="1"
@@ -185,6 +188,7 @@
         <!-- COLUMN 1  -->
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/stuff"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_rowWeight="1"
@@ -224,6 +228,7 @@
         <!-- COLUMN 2  -->
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/food"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_rowWeight="1"
