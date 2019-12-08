@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_maman">
+
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.esprit.je_suis_enceinte.ui.home.HomeFragment"
+        android:label="@string/title_accueil"
+        tools:layout="@layout/fragment_dashboard" />
+
+
+    <fragment
+        android:id="@+id/navigation_maman"
+        android:name="com.esprit.je_suis_enceinte.ui.Maman.MamanFragment"
+        android:label="@string/title_moi"
+        tools:layout="@layout/fragment_maman" />
+
+
+
+    <fragment
+        android:id="@+id/navigation_bebe"
+        android:name="com.esprit.je_suis_enceinte.ui.Bebe.BebeFragment"
+        android:label="@string/title_bebe"
+        tools:layout="@layout/fragment_notifications" />
+</navigation>
