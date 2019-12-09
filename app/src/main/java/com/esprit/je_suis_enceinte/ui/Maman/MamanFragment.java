@@ -18,6 +18,7 @@ import com.esprit.je_suis_enceinte.NavigationActivity;
 import com.esprit.je_suis_enceinte.R;
 import com.esprit.je_suis_enceinte.fragments.BlankFragment;
 import com.esprit.je_suis_enceinte.fragments.CalendarFragment;
+import com.esprit.je_suis_enceinte.fragments.GuideFragment;
 import com.esprit.je_suis_enceinte.fragments.PrenomsFragment;
 
 
@@ -32,7 +33,7 @@ public class MamanFragment extends Fragment implements View.OnClickListener {
                              Bundle savedInstanceState) {
         thisView = inflater.inflate(R.layout.fragment_maman, container, false);
         this.container = container;
-        cardView = thisView.findViewById(R.id.bib);
+        cardView = thisView.findViewById(R.id.guides);
         cardView.setOnClickListener(this);
         return thisView;
     }
@@ -45,9 +46,9 @@ public class MamanFragment extends Fragment implements View.OnClickListener {
 
 
             switch (v.getId()) {
-                case R.id.bib:
+                case R.id.guides:
 
-                    ((NavigationActivity) getActivity()).loadFragment(new PrenomsFragment());
+                    ((NavigationActivity) getActivity()).loadFragment(new GuideFragment());
 
                     break;
                 case R.id.calendar:
