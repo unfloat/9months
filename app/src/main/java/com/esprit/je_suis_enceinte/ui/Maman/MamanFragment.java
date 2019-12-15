@@ -51,17 +51,17 @@ public class MamanFragment extends Fragment implements View.OnClickListener {
                     ((NavigationActivity) getActivity()).loadFragment(new GuideFragment());
 
                     break;
-                case R.id.calendar:
+                case R.id.calendarmaman:
 
                     ((NavigationActivity) getActivity()).loadFragment(new CalendarFragment());
 
                     break;
-                case R.id.tummy:
+                case R.id.poids:
 
                     ((NavigationActivity) getActivity()).loadFragment(new PrenomsFragment());
 
                     break;
-                case R.id.scale:
+                case R.id.ventre:
 
                     ((NavigationActivity) getActivity()).loadFragment(new PrenomsFragment());
 

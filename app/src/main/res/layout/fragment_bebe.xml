@@ -110,7 +110,7 @@
         <!-- COLUMN 1  -->
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/scale"
+            android:id="@+id/coupe"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_rowWeight="1"
@@ -151,7 +151,7 @@
         <!-- COLUMN 2  -->
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/tummy"
+            android:id="@+id/taille"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_rowWeight="1"
@@ -194,7 +194,7 @@
         <!-- COLUMN 1  -->
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/stuff"
+            android:id="@+id/image"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_rowWeight="1"
@@ -235,7 +235,7 @@
         <!-- COLUMN 2  -->
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/food"
+            android:id="@+id/sac"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_rowWeight="1"

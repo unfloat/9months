@@ -48,22 +48,22 @@ public class BebeFragment extends Fragment implements View.OnClickListener {
                     ((NavigationActivity) getActivity()).loadFragment(new PrenomsFragment());
 
                     break;
-                case R.id.calendar:
+               case R.id.calendar:
 
                     ((NavigationActivity) getActivity()).loadFragment(new CalendarFragment());
 
                     break;
-                case R.id.tummy:
+                case R.id.coupe:
 
                     ((NavigationActivity) getActivity()).loadFragment(new PrenomsFragment());
 
                     break;
-                case R.id.scale:
+                case R.id.taille:
 
                     ((NavigationActivity) getActivity()).loadFragment(new PrenomsFragment());
 
                     break;
-                case R.id.stuff:
+                case R.id.image:
 
                     ((NavigationActivity) getActivity()).loadFragment(new PrenomsFragment());
 

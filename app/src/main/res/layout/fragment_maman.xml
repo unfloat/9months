@@ -65,7 +65,7 @@
         <!-- COLUMN 2  -->
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/calendar"
+            android:id="@+id/calendarmaman"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_rowWeight="1"
@@ -108,7 +108,7 @@
         <!-- COLUMN 1  -->
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/scale"
+            android:id="@+id/poids"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_rowWeight="1"
@@ -149,7 +149,7 @@
         <!-- COLUMN 2  -->
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/tummy"
+            android:id="@+id/ventre"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_rowWeight="1"
