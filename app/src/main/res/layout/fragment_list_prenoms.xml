@@ -12,6 +12,6 @@
         android:layout_height="match_parent"
         android:scrollbars="vertical"
         android:id="@+id/recyclerViewFav"
-        tools:context=".MatchActivity">
+        >
     </androidx.recyclerview.widget.RecyclerView>
 </FrameLayout>
