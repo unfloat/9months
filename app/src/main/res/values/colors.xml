@@ -13,5 +13,8 @@
     <color name="colorMagicMint">#00bfff</color>
     <color name="colorPinkLace">#F2D5F8</color>
     <color name="colorGrey">#ebebe0</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+
 
 </resources>
