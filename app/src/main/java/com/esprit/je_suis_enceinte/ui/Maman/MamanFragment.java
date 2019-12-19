@@ -30,8 +30,9 @@ public class MamanFragment extends Fragment implements View.OnClickListener {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        thisView = inflater.inflate(R.layout.fragment_maman, container, false);
         this.container = container;
+        container.removeAllViews();
+        thisView = inflater.inflate(R.layout.fragment_maman, container, false);
         cardView = thisView.findViewById(R.id.bib);
         cardView.setOnClickListener(this);
         return thisView;
