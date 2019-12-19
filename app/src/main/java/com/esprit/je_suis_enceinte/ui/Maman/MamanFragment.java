@@ -5,20 +5,15 @@ import android.os.Bundle;
 
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
-import com.esprit.je_suis_enceinte.ContainerActivity;
 import com.esprit.je_suis_enceinte.NavigationActivity;
 import com.esprit.je_suis_enceinte.R;
-import com.esprit.je_suis_enceinte.fragments.BlankFragment;
 import com.esprit.je_suis_enceinte.fragments.CalendarFragment;
-import com.esprit.je_suis_enceinte.fragments.GuideFragment;
+import com.esprit.je_suis_enceinte.Maman.Guide.GuideFragment;
 import com.esprit.je_suis_enceinte.fragments.PrenomsFragment;
 
 
