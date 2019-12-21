@@ -1,4 +1,4 @@
-package com.esprit.je_suis_enceinte.menu_maman.Guide;
+package com.esprit.je_suis_enceinte.menu_maman.Guide.fragments;
 
 import android.os.Bundle;
 
@@ -12,6 +12,7 @@ import com.esprit.je_suis_enceinte.R;
 
 
 public class NutrisionFragment extends Fragment {
+    private View thisview;
 
     public NutrisionFragment() {
         // Required empty public constructor
@@ -30,7 +31,8 @@ public class NutrisionFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_nutrision, container, false);
+        thisview = inflater.inflate(R.layout.fragment_nutrision, container, false);
+        return thisview;
     }
 
 

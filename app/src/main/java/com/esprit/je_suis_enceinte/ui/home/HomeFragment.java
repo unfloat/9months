@@ -13,16 +13,12 @@ import com.esprit.je_suis_enceinte.R;
 
 public class HomeFragment extends Fragment implements View.OnClickListener {
     private View thisView;
-    private Button menuPrenoms;
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         thisView = inflater.inflate(R.layout.fragment_home, container, false);
-
-      //  menuPrenoms = (Button)thisView.findViewById(R.id.food);
-
         return thisView;
 
     }

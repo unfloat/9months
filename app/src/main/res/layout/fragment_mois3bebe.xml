@@ -3,14 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".menu_maman.Guide.TabFragment">
+    tools:context=".menu_bebe.image.fragments.mois3bebeFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:id="@+id/tabtext"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="testtttttttttttt"/>
+        android:text="@string/hello_blank_fragment" />
 
 </FrameLayout>

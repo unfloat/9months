@@ -6,21 +6,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".menu_maman.Guide.GuideFragment">
 
-
+    <!-- TODO: Update blank fragment layout -->
     <com.google.android.material.tabs.TabLayout
-        android:id="@+id/sliding_tabs"
+        android:id="@+id/sliding_tabsguide"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:tabGravity="fill"
         app:tabMaxWidth="0dp"
         app:tabMode="scrollable" />
 
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/viewpager"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="@android:color/white" />
 
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpagerguide"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        android:background="@android:color/white" />
 
 </FrameLayout>

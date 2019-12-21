@@ -18,7 +18,6 @@
         <activity android:name=".authentification.CalculateurActivity" />
         <activity android:name=".authentification.TermeActivity" />
         <activity android:name=".authentification.SignupDetailActivity" />
-        <activity android:name=".ContainerActivity" />
         <activity android:name=".authentification.SignupActivity" />
         <activity android:name=".authentification.LoginActivity" />
         <activity android:name=".SplashScreen">

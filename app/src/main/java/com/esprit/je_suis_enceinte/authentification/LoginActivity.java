@@ -7,21 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 
-import com.esprit.je_suis_enceinte.ContainerActivity;
-import com.esprit.je_suis_enceinte.MainActivity;
 import com.esprit.je_suis_enceinte.NavigationActivity;
 import com.esprit.je_suis_enceinte.R;
-import com.esprit.je_suis_enceinte.retrofit.RetrofitClient;
-
-import java.io.IOException;
-
-import okhttp3.ResponseBody;
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
 
 public class LoginActivity extends AppCompatActivity {
     TextView link_signup;
@@ -65,8 +54,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 */
-       /* Intent loginIntent = new Intent(LoginActivity.this, ContainerActivity.class);
-        startActivity(loginIntent);*/
+
 
         Intent loginIntent = new Intent(LoginActivity.this, NavigationActivity.class);
         startActivity(loginIntent);

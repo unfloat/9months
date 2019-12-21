@@ -14,7 +14,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.esprit.je_suis_enceinte.R;
-import com.esprit.je_suis_enceinte.menu_maman.Guide.GuideAdapter;
 import com.esprit.je_suis_enceinte.menu_maman.Ventre.fragments.mois1Fragment;
 import com.esprit.je_suis_enceinte.menu_maman.Ventre.fragments.mois2Fragment;
 import com.esprit.je_suis_enceinte.menu_maman.Ventre.fragments.mois3Fragment;
@@ -63,15 +62,15 @@ public class VentreFragment extends Fragment {
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getChildFragmentManager());
-        adapter.addFrag(new mois1Fragment(), "1 mois");
-        adapter.addFrag(new mois2Fragment(), "2 mois");
-        /*adapter.addFrag(new mois3Fragment(), "THREE");
-        adapter.addFrag(new mois4Fragment(), "FOUR");
-        adapter.addFrag(new mois5Fragment(), "FIVE");
-        adapter.addFrag(new mois6Fragment(), "SIX");
-        adapter.addFrag(new mois7Fragment(), "SEVEN");
-        adapter.addFrag(new mois8Fragment(), "EIGHT");
-        adapter.addFrag(new mois9Fragment(), "NINE");*/
+        adapter.addFrag(new mois1Fragment(), "1 MOIS");
+        adapter.addFrag(new mois2Fragment(), "2 MOIS");
+        adapter.addFrag(new mois3Fragment(), "3 MOIS");
+        adapter.addFrag(new mois4Fragment(), "4 MOIS");
+        adapter.addFrag(new mois5Fragment(), "5 MOIS");
+        adapter.addFrag(new mois6Fragment(), "6 MOIS");
+        adapter.addFrag(new mois7Fragment(), "7 MOIS");
+        adapter.addFrag(new mois8Fragment(), "8 MOIS");
+        adapter.addFrag(new mois9Fragment(), "9 MOIS");
         viewPager.setAdapter(adapter);
     }
 

@@ -16,9 +16,6 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.esprit.je_suis_enceinte.authentification.LoginActivity;
-import com.esprit.je_suis_enceinte.authentification.SignupActivity;
-import com.esprit.je_suis_enceinte.fragments.BlankFragment;
-import com.esprit.je_suis_enceinte.fragments.PrenomsFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class NavigationActivity extends AppCompatActivity {
@@ -37,7 +34,6 @@ public class NavigationActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(navView, navController);
-
 
     }
 

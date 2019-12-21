@@ -5,7 +5,11 @@
       <configuration>
         <option name="GRADLE_PROJECT_PATH" value=":app" />
 <<<<<<< HEAD
+<<<<<<< HEAD
         <option name="LAST_SUCCESSFUL_SYNC_AGP_VERSION" value="3.5.3" />
+=======
+        <option name="LAST_SUCCESSFUL_SYNC_AGP_VERSION" />
+>>>>>>> cd0c7e50073c0d77631be6340d9143cfe350b1b2
 =======
         <option name="LAST_SUCCESSFUL_SYNC_AGP_VERSION" />
 >>>>>>> cd0c7e50073c0d77631be6340d9143cfe350b1b2
@@ -24,8 +28,11 @@
         <option name="MANIFEST_FILE_RELATIVE_PATH" value="/src/main/AndroidManifest.xml" />
         <option name="RES_FOLDER_RELATIVE_PATH" value="/src/main/res" />
 <<<<<<< HEAD
+<<<<<<< HEAD
         <option name="RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/src/main/res;file://$MODULE_DIR$/build/generated/res/resValues/debug" />
         <option name="TEST_RES_FOLDERS_RELATIVE_PATH" value="" />
+=======
+>>>>>>> cd0c7e50073c0d77631be6340d9143cfe350b1b2
 =======
 >>>>>>> cd0c7e50073c0d77631be6340d9143cfe350b1b2
         <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/src/main/assets" />

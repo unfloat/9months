@@ -11,15 +11,16 @@ import androidx.fragment.app.Fragment;
 
 import com.esprit.je_suis_enceinte.NavigationActivity;
 import com.esprit.je_suis_enceinte.R;
+import com.esprit.je_suis_enceinte.menu_bebe.image.ImageFragment;
 import com.esprit.je_suis_enceinte.menu_maman.CalendarFragment;
-import com.esprit.je_suis_enceinte.fragments.PrenomsFragment;
+import com.esprit.je_suis_enceinte.menu_bebe.PrenomsFragment;
 
 
 public class BebeFragment extends Fragment implements View.OnClickListener {
     private View thisView;
     private Button menuPrenoms;
     private ViewGroup container;
-    private CardView cardView;
+    private CardView cardViewbib,cardViewcalendar,cardViewcoupe,cardViewtaille,cardViewimage,cardViewsac;
 
 
 
@@ -28,8 +29,24 @@ public class BebeFragment extends Fragment implements View.OnClickListener {
                              Bundle savedInstanceState) {
         thisView = inflater.inflate(R.layout.fragment_bebe, container, false);
         this.container = container;
-        cardView = thisView.findViewById(R.id.bib);
-        cardView.setOnClickListener(this);
+
+        cardViewbib = thisView.findViewById(R.id.bib);
+        cardViewbib.setOnClickListener(this);
+
+        cardViewcalendar = thisView.findViewById(R.id.calendar);
+        cardViewcalendar.setOnClickListener(this);
+
+        cardViewcoupe = thisView.findViewById(R.id.coupe);
+        cardViewcoupe.setOnClickListener(this);
+
+        cardViewtaille = thisView.findViewById(R.id.taille);
+        cardViewtaille.setOnClickListener(this);
+
+        cardViewimage = thisView.findViewById(R.id.image);
+        cardViewimage.setOnClickListener(this);
+
+        cardViewsac = thisView.findViewById(R.id.sac);
+        cardViewsac.setOnClickListener(this);
         return thisView;
 
     }
@@ -65,10 +82,10 @@ public class BebeFragment extends Fragment implements View.OnClickListener {
                     break;
                 case R.id.image:
 
-                    ((NavigationActivity) getActivity()).loadFragment(new PrenomsFragment());
+                    ((NavigationActivity) getActivity()).loadFragment(new ImageFragment());
 
                     break;
-                case R.id.food:
+                case R.id.sac:
 
                     ((NavigationActivity) getActivity()).loadFragment(new PrenomsFragment());
 

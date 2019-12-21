@@ -10,12 +10,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.esprit.je_suis_enceinte.menu_maman.Guide.GuideFragment;
 import com.esprit.je_suis_enceinte.menu_maman.PoidsFragment;
 import com.esprit.je_suis_enceinte.NavigationActivity;
 import com.esprit.je_suis_enceinte.R;
 import com.esprit.je_suis_enceinte.menu_maman.CalendarFragment;
-import com.esprit.je_suis_enceinte.menu_maman.Guide.GuideFragment;
-import com.esprit.je_suis_enceinte.fragments.PrenomsFragment;
+import com.esprit.je_suis_enceinte.menu_bebe.PrenomsFragment;
 import com.esprit.je_suis_enceinte.menu_maman.Ventre.VentreFragment;
 
 
@@ -28,8 +28,9 @@ public class MamanFragment extends Fragment implements View.OnClickListener {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+        thisView = inflater.inflate(R.layout.fragment_maman, container, false);
         this.container = container;
-<<<<<<< HEAD
 
         cardViewGuids = thisView.findViewById(R.id.guides);
         cardViewGuids.setOnClickListener(this);
@@ -49,12 +50,6 @@ public class MamanFragment extends Fragment implements View.OnClickListener {
         cardViewfood = thisView.findViewById(R.id.food);
         cardViewfood.setOnClickListener(this);
 
-=======
-        container.removeAllViews();
-        thisView = inflater.inflate(R.layout.fragment_maman, container, false);
-        cardView = thisView.findViewById(R.id.bib);
-        cardView.setOnClickListener(this);
->>>>>>> cd0c7e50073c0d77631be6340d9143cfe350b1b2
         return thisView;
     }
 
