@@ -11,7 +11,10 @@ import androidx.fragment.app.Fragment;
 
 import com.esprit.je_suis_enceinte.NavigationActivity;
 import com.esprit.je_suis_enceinte.R;
+import com.esprit.je_suis_enceinte.menu_bebe.CoupsFragment;
+import com.esprit.je_suis_enceinte.menu_bebe.hebdomadaire.HebdomadaireFragment;
 import com.esprit.je_suis_enceinte.menu_bebe.image.ImageFragment;
+import com.esprit.je_suis_enceinte.menu_bebe.taille.TailleFragment;
 import com.esprit.je_suis_enceinte.menu_maman.CalendarFragment;
 import com.esprit.je_suis_enceinte.menu_bebe.PrenomsFragment;
 
@@ -67,17 +70,17 @@ public class BebeFragment extends Fragment implements View.OnClickListener {
                     break;
                case R.id.calendar:
 
-                    ((NavigationActivity) getActivity()).loadFragment(new CalendarFragment());
+                    ((NavigationActivity) getActivity()).loadFragment(new HebdomadaireFragment());
 
                     break;
                 case R.id.coupe:
 
-                    ((NavigationActivity) getActivity()).loadFragment(new PrenomsFragment());
+                    ((NavigationActivity) getActivity()).loadFragment(new CoupsFragment());
 
                     break;
                 case R.id.taille:
 
-                    ((NavigationActivity) getActivity()).loadFragment(new PrenomsFragment());
+                    ((NavigationActivity) getActivity()).loadFragment(new TailleFragment());
 
                     break;
                 case R.id.image:
