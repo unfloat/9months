@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\ramzi\\Documents\\Esprit\\4SIM2\\Semstre 1\\Android\\PI\\9months\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-lv-rLV\\values-lv-rLV.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\ramzi\\.gradle\\caches\\transforms-2\\files-2.1\\5e88901b21139bc2d6021535f65a75f2\\jetified-android.joda-2.10.3\\res\\values-lv-rLV\\values-lv-rLV.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "66",
+                        "endOffsets": "117"
+                    }
+                }
+            ]
+        }
+    ]
+}

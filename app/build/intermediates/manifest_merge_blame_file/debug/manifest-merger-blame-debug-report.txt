@@ -1,0 +1,98 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.esprit.je_suis_enceinte"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->F:\Cours\4SIM2\pi_android_fonctionnalites\PI\9months\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->F:\Cours\4SIM2\pi_android_fonctionnalites\PI\9months\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->F:\Cours\4SIM2\pi_android_fonctionnalites\PI\9months\app\src\main\AndroidManifest.xml:5:5-67
+11-->F:\Cours\4SIM2\pi_android_fonctionnalites\PI\9months\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->F:\Cours\4SIM2\pi_android_fonctionnalites\PI\9months\app\src\main\AndroidManifest.xml:6:5-79
+12-->F:\Cours\4SIM2\pi_android_fonctionnalites\PI\9months\app\src\main\AndroidManifest.xml:6:22-76
+13
+14    <application
+14-->F:\Cours\4SIM2\pi_android_fonctionnalites\PI\9months\app\src\main\AndroidManifest.xml:9:5-35:19
+15        android:allowBackup="true"
+15-->F:\Cours\4SIM2\pi_android_fonctionnalites\PI\9months\app\src\main\AndroidManifest.xml:10:9-35
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.1.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\e9dab9c67c1ee3668e0bbf86c6d8cbd8\core-1.1.0\AndroidManifest.xml:24:18-86
+17        android:debuggable="true"
+18        android:icon="@mipmap/ic_launcher"
+18-->F:\Cours\4SIM2\pi_android_fonctionnalites\PI\9months\app\src\main\AndroidManifest.xml:11:9-43
+19        android:label="@string/app_name"
+19-->F:\Cours\4SIM2\pi_android_fonctionnalites\PI\9months\app\src\main\AndroidManifest.xml:12:9-41
+20        android:networkSecurityConfig="@xml/network_security_config"
+20-->F:\Cours\4SIM2\pi_android_fonctionnalites\PI\9months\app\src\main\AndroidManifest.xml:14:9-69
+21        android:roundIcon="@mipmap/ic_launcher_round"
+21-->F:\Cours\4SIM2\pi_android_fonctionnalites\PI\9months\app\src\main\AndroidManifest.xml:13:9-54
+22        android:supportsRtl="true"
+22-->F:\Cours\4SIM2\pi_android_fonctionnalites\PI\9months\app\src\main\AndroidManifest.xml:15:9-35
+23        android:theme="@style/AppTheme"
+23-->F:\Cours\4SIM2\pi_android_fonctionnalites\PI\9months\app\src\main\AndroidManifest.xml:17:9-40
+24        android:usesCleartextTraffic="true" >
+24-->F:\Cours\4SIM2\pi_android_fonctionnalites\PI\9months\app\src\main\AndroidManifest.xml:16:9-44
+25        <activity android:name="com.esprit.je_suis_enceinte.menu_maman.VentreActivity" />
+25-->F:\Cours\4SIM2\pi_android_fonctionnalites\PI\9months\app\src\main\AndroidManifest.xml:18:9-62
+25-->F:\Cours\4SIM2\pi_android_fonctionnalites\PI\9months\app\src\main\AndroidManifest.xml:18:19-60
+26        <activity android:name="com.esprit.je_suis_enceinte.menu_maman.PoidsActivity" />
+26-->F:\Cours\4SIM2\pi_android_fonctionnalites\PI\9months\app\src\main\AndroidManifest.xml:19:9-62
+26-->F:\Cours\4SIM2\pi_android_fonctionnalites\PI\9months\app\src\main\AndroidManifest.xml:19:19-59
+27        <activity android:name="com.esprit.je_suis_enceinte.ProfileActivity" />
+27-->F:\Cours\4SIM2\pi_android_fonctionnalites\PI\9months\app\src\main\AndroidManifest.xml:20:9-53
+27-->F:\Cours\4SIM2\pi_android_fonctionnalites\PI\9months\app\src\main\AndroidManifest.xml:20:19-50
+28        <activity android:name="com.esprit.je_suis_enceinte.NavigationActivity" />
+28-->F:\Cours\4SIM2\pi_android_fonctionnalites\PI\9months\app\src\main\AndroidManifest.xml:21:9-56
+28-->F:\Cours\4SIM2\pi_android_fonctionnalites\PI\9months\app\src\main\AndroidManifest.xml:21:19-53
+29        <activity android:name="com.esprit.je_suis_enceinte.authentification.CalculateurActivity" />
+29-->F:\Cours\4SIM2\pi_android_fonctionnalites\PI\9months\app\src\main\AndroidManifest.xml:22:9-74
+29-->F:\Cours\4SIM2\pi_android_fonctionnalites\PI\9months\app\src\main\AndroidManifest.xml:22:19-71
+30        <activity android:name="com.esprit.je_suis_enceinte.authentification.TermeActivity" />
+30-->F:\Cours\4SIM2\pi_android_fonctionnalites\PI\9months\app\src\main\AndroidManifest.xml:23:9-68
+30-->F:\Cours\4SIM2\pi_android_fonctionnalites\PI\9months\app\src\main\AndroidManifest.xml:23:19-65
+31        <activity android:name="com.esprit.je_suis_enceinte.authentification.SignupDetailActivity" />
+31-->F:\Cours\4SIM2\pi_android_fonctionnalites\PI\9months\app\src\main\AndroidManifest.xml:24:9-75
+31-->F:\Cours\4SIM2\pi_android_fonctionnalites\PI\9months\app\src\main\AndroidManifest.xml:24:19-72
+32        <activity android:name="com.esprit.je_suis_enceinte.authentification.SignupActivity" />
+32-->F:\Cours\4SIM2\pi_android_fonctionnalites\PI\9months\app\src\main\AndroidManifest.xml:25:9-69
+32-->F:\Cours\4SIM2\pi_android_fonctionnalites\PI\9months\app\src\main\AndroidManifest.xml:25:19-66
+33        <activity android:name="com.esprit.je_suis_enceinte.authentification.LoginActivity" />
+33-->F:\Cours\4SIM2\pi_android_fonctionnalites\PI\9months\app\src\main\AndroidManifest.xml:26:9-68
+33-->F:\Cours\4SIM2\pi_android_fonctionnalites\PI\9months\app\src\main\AndroidManifest.xml:26:19-65
+34        <activity android:name="com.esprit.je_suis_enceinte.SplashScreen" >
+34-->F:\Cours\4SIM2\pi_android_fonctionnalites\PI\9months\app\src\main\AndroidManifest.xml:27:9-33:20
+34-->F:\Cours\4SIM2\pi_android_fonctionnalites\PI\9months\app\src\main\AndroidManifest.xml:27:19-47
+35            <intent-filter>
+35-->F:\Cours\4SIM2\pi_android_fonctionnalites\PI\9months\app\src\main\AndroidManifest.xml:28:13-32:29
+36                <action android:name="android.intent.action.MAIN" />
+36-->F:\Cours\4SIM2\pi_android_fonctionnalites\PI\9months\app\src\main\AndroidManifest.xml:29:17-69
+36-->F:\Cours\4SIM2\pi_android_fonctionnalites\PI\9months\app\src\main\AndroidManifest.xml:29:25-66
+37
+38                <category android:name="android.intent.category.LAUNCHER" />
+38-->F:\Cours\4SIM2\pi_android_fonctionnalites\PI\9months\app\src\main\AndroidManifest.xml:31:17-77
+38-->F:\Cours\4SIM2\pi_android_fonctionnalites\PI\9months\app\src\main\AndroidManifest.xml:31:27-74
+39            </intent-filter>
+40        </activity>
+41        <activity android:name="com.esprit.je_suis_enceinte.MainActivity" />
+41-->F:\Cours\4SIM2\pi_android_fonctionnalites\PI\9months\app\src\main\AndroidManifest.xml:34:9-50
+41-->F:\Cours\4SIM2\pi_android_fonctionnalites\PI\9months\app\src\main\AndroidManifest.xml:34:19-47
+42
+43        <provider
+43-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\6fbf654d3db04d7d9e48eb73ccf59f45\lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
+44            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+44-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\6fbf654d3db04d7d9e48eb73ccf59f45\lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
+45            android:authorities="com.esprit.je_suis_enceinte.lifecycle-process"
+45-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\6fbf654d3db04d7d9e48eb73ccf59f45\lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
+46            android:exported="false"
+46-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\6fbf654d3db04d7d9e48eb73ccf59f45\lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
+47            android:multiprocess="true" />
+47-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\6fbf654d3db04d7d9e48eb73ccf59f45\lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
+48    </application>
+49
+50</manifest>

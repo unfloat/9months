@@ -1,0 +1,7 @@
+#Sat Jan 04 12:33:47 WAT 2020
+base.0=C\:\\Users\\ramzi\\Documents\\Esprit\\4SIM2\\Semstre 1\\Android\\PI\\9months\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
+path.1=classes.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=C\:\\Users\\ramzi\\Documents\\Esprit\\4SIM2\\Semstre 1\\Android\\PI\\9months\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex
