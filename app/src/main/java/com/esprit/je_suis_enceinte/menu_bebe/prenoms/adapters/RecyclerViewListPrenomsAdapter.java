@@ -1,22 +1,18 @@
-package com.esprit.je_suis_enceinte.adapters;
+package com.esprit.je_suis_enceinte.menu_bebe.prenoms.adapters;
 
 import android.content.Context;
-import android.content.Intent;
-import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.esprit.je_suis_enceinte.R;
-import com.esprit.je_suis_enceinte.models.PrenomsModel;
+import com.esprit.je_suis_enceinte.menu_bebe.prenoms.models.PrenomsModel;
 
 public class RecyclerViewListPrenomsAdapter extends RecyclerView.Adapter<RecyclerViewListPrenomsAdapter.ViewHolder>{
     private PrenomsModel[] listdata;
@@ -29,6 +25,7 @@ public class RecyclerViewListPrenomsAdapter extends RecyclerView.Adapter<Recycle
         this.listdata = listdata;
         this.context = context;
     }
+
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
@@ -67,15 +64,17 @@ public class RecyclerViewListPrenomsAdapter extends RecyclerView.Adapter<Recycle
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
+        public ImageView logogenre;
         public TextView prenom_text;
         public Button prenom_favoris_button;
 
         public RelativeLayout layout;
         public ViewHolder(View itemView) {
             super(itemView);
-            prenom_text = (TextView) itemView.findViewById(R.id.prenom_text);
-            prenom_favoris_button = (Button) itemView.findViewById(R.id.prenom_favoris_button);
-            layout = (RelativeLayout)itemView.findViewById(R.id.item_prenom_layout);
+            logogenre = itemView.findViewById(R.id.logogenre);
+            prenom_text = itemView.findViewById(R.id.prenom_text);
+            prenom_favoris_button =  itemView.findViewById(R.id.prenom_favoris_button);
+            layout = itemView.findViewById(R.id.item_prenom_layout);
 
         }
     }

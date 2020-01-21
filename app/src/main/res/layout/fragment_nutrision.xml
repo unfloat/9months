@@ -3,13 +3,253 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:ndroid="http://schemas.android.com/apk/res-auto"
     tools:context=".menu_maman.Guide.fragments.NutrisionFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:text="NUTRISION" />
+        android:background="@color/colorGrey"
+        android:orientation="vertical">
 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.3"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/grossessealimentation"
+             />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorWhite"
+            android:layout_weight="0.7">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorFrosteLghter"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="L'alimentation durant la grossesse"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Il est important de bien se nourrir durant la grossesse, car le corps de la femme enceinte fournit au futur bébé tous les éléments dont il a besoin pour bien se développer : les protéines, les bons gras, les sucres, les vitamines et les minéraux. Les besoins en énergie et en éléments nutritifs sont d’ailleurs plus grands durant la grossesse. Les femmes qui mangent bien durant leur grossesse contribuent donc à la bonne santé de leur bébé à venir. "
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorFrosteLghter"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Faut-il manger pour deux pendant la grossesse?"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="250dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="0.3"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/grossessealimentation1"
+                            />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.7"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:textSize="18dp"
+                           android:text="Pour la femme enceinte, « manger pour deux » ne signifie pas manger deux fois plus, mais deux fois mieux. Il est vrai que les besoins en calories augmentent durant la grossesse, mais la différence n’est pas énorme. "
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="18dp"
+                        android:text="Vous devez surtout porter attention à la qualité des aliments que vous consommez. La variété et la couleur doivent figurer au menu. "
+                        />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="24dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorFrosteLghter"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="Quoi manger pendant la grossesse? Quelle quantité?"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorFrosteLghter"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="Les fruits et les légumes"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.7"
+                                android:layout_marginTop="1dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:textSize="18dp"
+                               android:text="Les fruits et les légumes devraient compter pour environ la moitié des aliments que vous mangez chaque jour. S’ils arrivent en tête de liste, c’est notamment parce qu’ils contiennent beaucoup de nutriments essentiels (ex. : minéraux, vitamines et fibres) et d’eau. "
+                                />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="250dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_weight="0.3"
+                                android:layout_marginTop="1dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/grossessealimentation2"
+                                />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorFrosteLghter"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="Le poisson et le mercure"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:textSize="18dp"
+                            android:text="Les poissons et les fruits de mer suivants peuvent quant à eux être consommés sans restriction : la truite (sauf le touladi), l’aiglefin, le thon pâle en conserve, la sole, le maquereau, les sardines, l’omble, le hareng, le saumon, la plie, l’éperlan, les anchois, la goberge, le tilapia, les huîtres cuites, les moules, les palourdes, les pétoncles, le crabe, les crevettes et le homard. "
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorFrosteLghter"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="Le végétarisme et le végétalisme pendant la grossesse"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="250dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_weight="0.3"
+                                android:layout_marginTop="1dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/grossessealimentation4"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.7"
+                                android:layout_marginTop="1dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:textSize="18dp"
+                                android:text="Si vous êtes végétarienne ou végétalienne, vous pouvez le demeurer tout au long de votre grossesse. Cependant, pour votre santé et pour celle de votre bébé à venir, portez une attention particulière à votre apport en fer, en vitamine B12, en vitamine D, en calcium et en oméga-3. "
+                                />
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
 </FrameLayout>

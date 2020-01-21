@@ -6,9 +6,50 @@
     tools:context=".menu_maman.Guide.fragments.AllaitmentFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:background="@color/colorGrey"
+        android:orientation="vertical">
 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.3"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/allaiterpendantgrossesse"
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorWhite"
+            android:layout_weight="0.7">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=" Lorsqu’une mère allaite son enfant pendant plusieurs mois ou plusieurs années, il est possible qu’elle devienne de nouveau enceinte pendant cette période. Elle peut alors choisir de poursuivre l’allaitement de son enfant. Parmi les raisons invoquées pour continuer, certaines mères mentionnent le fait que leur enfant avait encore besoin de ces moments de proximité et qu’il n’était pas prêt à être sevré.
+
+Bien que certaines personnes soulèvent des questions sur la sécurité de l’allaitement pendant la grossesse, cette pratique ne pose aucun risque pour la santé de la mère, du foetus ou de l’enfant allaité. "
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
 </FrameLayout>

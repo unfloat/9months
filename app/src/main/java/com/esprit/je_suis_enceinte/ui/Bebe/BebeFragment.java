@@ -11,17 +11,15 @@ import androidx.fragment.app.Fragment;
 
 import com.esprit.je_suis_enceinte.NavigationActivity;
 import com.esprit.je_suis_enceinte.R;
-import com.esprit.je_suis_enceinte.menu_bebe.CoupsFragment;
+import com.esprit.je_suis_enceinte.menu_bebe.coups.CoupsFragment;
 import com.esprit.je_suis_enceinte.menu_bebe.hebdomadaire.HebdomadaireFragment;
 import com.esprit.je_suis_enceinte.menu_bebe.image.ImageFragment;
 import com.esprit.je_suis_enceinte.menu_bebe.taille.TailleFragment;
-import com.esprit.je_suis_enceinte.menu_maman.CalendarFragment;
-import com.esprit.je_suis_enceinte.menu_bebe.PrenomsFragment;
+import com.esprit.je_suis_enceinte.menu_bebe.prenoms.PrenomsFragment;
 
 
 public class BebeFragment extends Fragment implements View.OnClickListener {
     private View thisView;
-    private Button menuPrenoms;
     private ViewGroup container;
     private CardView cardViewbib,cardViewcalendar,cardViewcoupe,cardViewtaille,cardViewimage,cardViewsac;
 

@@ -14,8 +14,7 @@ import com.esprit.je_suis_enceinte.menu_maman.Guide.GuideFragment;
 import com.esprit.je_suis_enceinte.menu_maman.PoidsFragment;
 import com.esprit.je_suis_enceinte.NavigationActivity;
 import com.esprit.je_suis_enceinte.R;
-import com.esprit.je_suis_enceinte.menu_maman.CalendarFragment;
-import com.esprit.je_suis_enceinte.menu_bebe.PrenomsFragment;
+import com.esprit.je_suis_enceinte.menu_bebe.prenoms.PrenomsFragment;
 import com.esprit.je_suis_enceinte.menu_maman.Ventre.VentreFragment;
 
 
@@ -68,7 +67,7 @@ public class MamanFragment extends Fragment implements View.OnClickListener {
                     break;
                 case R.id.calendarmaman:
 
-                    ((NavigationActivity) getActivity()).loadFragment(new CalendarFragment());
+                    ((NavigationActivity) getActivity()).loadFragment(new GuideFragment());
 
                     break;
                 case R.id.poids:

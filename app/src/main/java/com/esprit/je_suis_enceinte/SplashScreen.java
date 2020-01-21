@@ -16,14 +16,11 @@ public class SplashScreen extends AppCompatActivity {
         setContentView(R.layout.activity_splash_screen);
         getSupportActionBar().hide();
 
-        new Handler().postDelayed(new Runnable(){
-            @Override
-            public void run() {
+        new Handler().postDelayed(() -> {
 
-                Intent LoginIntent = new Intent(SplashScreen.this, MainActivity.class);
-                SplashScreen.this.startActivity(LoginIntent);
-                SplashScreen.this.finish();
-            }
+            Intent LoginIntent = new Intent(SplashScreen.this, MainActivity.class);
+            SplashScreen.this.startActivity(LoginIntent);
+            SplashScreen.this.finish();
         }, SPLASH_DISPLAY_LENGTH);
     }
 

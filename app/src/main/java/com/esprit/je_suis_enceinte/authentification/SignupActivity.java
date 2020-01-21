@@ -2,28 +2,43 @@ package com.esprit.je_suis_enceinte.authentification;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+import com.esprit.je_suis_enceinte.NavigationActivity;
 import com.esprit.je_suis_enceinte.R;
-import com.esprit.je_suis_enceinte.retrofit.RetrofitClient;
+import com.esprit.je_suis_enceinte.bd.SessionHandler;
+import com.esprit.je_suis_enceinte.entities.User;
 
-import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 
-import okhttp3.ResponseBody;
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
 
 public class SignupActivity extends AppCompatActivity {
 
     TextView link_login;
+    EditText etUsername, etEmail, etPassword, etConfirmPassword;
+    Button btn_signup;
 
-    EditText username, email, password, repeat_password; // This will be a reference to our GitHub username input.
+
+    private static final String KEY_EMPTY = "";
+
+    private String email;
+    private String password;
+    private String confirmPassword;
+    private String nom;
+
+
+
 
 
     @Override
@@ -32,49 +47,72 @@ public class SignupActivity extends AppCompatActivity {
         setContentView(R.layout.activity_signup);
 
 
-        this.username = (EditText) findViewById(R.id.input_name);  // Link our github user text box.
-        this.email = (EditText) findViewById(R.id.input_email);  // Link our github user text box.
-        this.password = (EditText) findViewById(R.id.input_password);  // Link our github user text box.
-        this.repeat_password = (EditText) findViewById(R.id.input_reEnterPassword);  // Link our github user text box.
-
+        this.etUsername = findViewById(R.id.etUsername);
+        this.etEmail = findViewById(R.id.etEmail);
+        this.etPassword = findViewById(R.id.etPassword);
+        this.etConfirmPassword = findViewById(R.id.etConfirmPassword);
 
         link_login = findViewById(R.id.link_login);
-
-
-        link_login.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent LoginIntent = new Intent(SignupActivity.this, LoginActivity.class);
-                startActivity(LoginIntent);
-            }
+        link_login.setOnClickListener(v -> {
+            Intent LoginIntent = new Intent(SignupActivity.this, LoginActivity.class);
+            startActivity(LoginIntent);
+            finish();
         });
 
-
+        btn_signup = findViewById(R.id.btn_signup);
+        btn_signup.setOnClickListener(v -> {
+            nom = etUsername.getText().toString().toLowerCase().trim();
+            password = etPassword.getText().toString().trim();
+            confirmPassword = etConfirmPassword.getText().toString().trim();
+            email = etEmail.getText().toString().trim();
+            if (validateInputs()) {
+                registerUser(new User(nom,email,password));
+            }
+        });
     }
 
-    public void signup(View view) {
-        Call<ResponseBody> call = RetrofitClient.getInstance().getApiInterface().createUser(email.getText().toString().trim(), password.getText().toString().trim(), username.getText().toString().trim());
-        call.enqueue(new Callback<ResponseBody>() {
-            @Override
-            public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
-                try {
-                    String responseBody = response.body().string();
-                    Toast.makeText(SignupActivity.this,responseBody, Toast.LENGTH_LONG).show();
-
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
 
 
-            }
 
-            @Override
-            public void onFailure(Call<ResponseBody> call, Throwable t) {
-                Toast.makeText(SignupActivity.this, t.getMessage(), Toast.LENGTH_LONG).show();
-            }
-        });
 
-        Intent LoginIntent = new Intent(SignupActivity.this, SignupDetailActivity.class);
-        startActivity(LoginIntent);
+    private void registerUser(User user) {
+        Intent intent=new Intent(SignupActivity.this, SignupDetailActivity.class);
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("user", user);
+        intent.putExtras(bundle);
+        startActivity(intent);
+        }
+    
+
+
+    private boolean validateInputs() {
+        if (KEY_EMPTY.equals(email)) {
+            etEmail.setError("Email cannot be empty");
+            etEmail.requestFocus();
+            return false;
+
+        }
+        if (KEY_EMPTY.equals(nom)) {
+            etUsername.setError("nom cannot be empty");
+            etUsername.requestFocus();
+            return false;
+        }
+        if (KEY_EMPTY.equals(password)) {
+            etPassword.setError("Password cannot be empty");
+            etPassword.requestFocus();
+            return false;
+        }
+
+        if (KEY_EMPTY.equals(confirmPassword)) {
+            etConfirmPassword.setError("Confirm Password cannot be empty");
+            etConfirmPassword.requestFocus();
+            return false;
+        }
+        if (!password.equals(confirmPassword)) {
+            etConfirmPassword.setError("Password and Confirm Password does not match");
+            etConfirmPassword.requestFocus();
+            return false;
+        }
+        return true;
     }
 }

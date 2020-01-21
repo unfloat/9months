@@ -1,15 +1,21 @@
-package com.esprit.je_suis_enceinte.models;
+package com.esprit.je_suis_enceinte.menu_bebe.prenoms.models;
 
 public class PrenomsModel {
 
+    private int logogenre;
     private String prenom;
     private boolean isFavorite;
     private boolean isMale;
 
-    public PrenomsModel(String prenom, boolean isFavorite, boolean isMale) {
+    public PrenomsModel(int logogenre, String prenom, boolean isFavorite, boolean isMale) {
+        this.logogenre = logogenre;
         this.prenom = prenom;
         this.isFavorite = isFavorite;
         this.isMale = isMale;
+    }
+
+    public int getLogogenre() {
+        return logogenre;
     }
 
     public String getPrenom() {

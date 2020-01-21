@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".menu_bebe.CoupsFragment">
+    tools:context=".menu_bebe.coups.CoupsFragment">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -15,74 +15,114 @@
 
 
         <TextView
-            android:id="@+id/textView8"
-            android:layout_width="297dp"
-            android:layout_height="113dp"
-            android:layout_marginTop="60dp"
-            android:text="Appuyer sur le pied pour compter les coups"
+            android:id="@+id/title"
+            android:layout_width="304dp"
+            android:layout_height="127dp"
+            android:layout_marginTop="28dp"
+            android:text="Appuyer pour commencer"
             android:textAlignment="center"
             android:textColor="@color/colorFrosteLghter"
             android:textSize="24dp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/startcoups"
+            android:id="@+id/coups"
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:layout_margin="8dp"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="60dp"
             android:background="@drawable/foot"
             android:padding="16dp"
             android:rotation="20"
+            android:visibility="invisible"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+            app:layout_constraintTop_toBottomOf="@+id/title"
+            tools:visibility="visible" />
 
-        <TextView
-            android:id="@+id/textdebut"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+
+        <Button
+            android:id="@+id/btn_debut"
+            android:layout_width="169dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="28dp"
+            android:background="@color/colorMagicMint"
             android:text="Début"
-            android:textColor="@color/colorFrosteLghter"
+            android:textColor="@color/colorWhite"
             android:textSize="24dp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/startcoups" />
+            app:layout_constraintTop_toBottomOf="@+id/title" />
 
-        <TextView
-            android:id="@+id/textchrono"
+        <Chronometer
+            android:id="@+id/simpleChronometer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="68dp"
-            android:text="00:00"
+            android:layout_marginTop="15dp"
             android:textColor="@color/colorFrosteLghter"
             android:textSize="24dp"
             android:textStyle="bold"
+            android:visibility="invisible"
+            tools:visibility="visible"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textdebut" />
+            app:layout_constraintTop_toBottomOf="@+id/nbr_coups" />
 
         <TextView
-            android:id="@+id/textView15"
+            android:id="@+id/nbr_coups"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="9dp"
             android:text="0"
             android:textColor="@color/colorFrosteLghter"
             android:textSize="32dp"
             android:textStyle="bold"
+            android:visibility="invisible"
+            tools:visibility="visible"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textdebut" />
+            app:layout_constraintTop_toBottomOf="@+id/coups" />
+
+        <Button
+            android:id="@+id/btn_stop"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="112dp"
+            android:background="@color/colorFrosteLghter"
+            android:text="pause"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.189"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/coups"
+            tools:visibility="visible" />
+
+        <Button
+            android:id="@+id/btn_rest"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="112dp"
+            android:background="@color/colorElectric"
+            android:text="rest"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            tools:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.777"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/coups"
+             />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

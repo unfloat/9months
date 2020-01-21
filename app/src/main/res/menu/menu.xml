@@ -2,20 +2,22 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto">
 
-        <item
+    <item
             android:id="@+id/action_profile"
             android:icon="@drawable/logoprofile"
             android:title="@string/action_profile"
             app:showAsAction="ifRoom" />
 
-        <item
-            android:id="@+id/action_parametres"
-            android:title="@string/action_parametres"
-            app:showAsAction="never" />
+    <item
+        android:id="@+id/action_parametres"
+        android:title="@string/action_parametres"
+        app:showAsAction="never" />
     <item
         android:id="@+id/action_deconnexion"
+        android:icon="@drawable/logout"
         android:title="@string/action_deconnexion"
         app:showAsAction="never" />
+
 
 
     </menu>

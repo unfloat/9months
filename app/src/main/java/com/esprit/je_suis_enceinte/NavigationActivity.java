@@ -16,15 +16,19 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.esprit.je_suis_enceinte.authentification.LoginActivity;
+import com.esprit.je_suis_enceinte.bd.SessionHandler;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class NavigationActivity extends AppCompatActivity {
+    private SessionHandler session;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_navigation);
+
+        session = new SessionHandler(getApplicationContext());
+
         BottomNavigationView navView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
@@ -47,7 +51,6 @@ public class NavigationActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        //ajoute les entrées de menu_test à l'ActionBar
         getMenuInflater().inflate(R.menu.menu, menu);
         return true;
     }
@@ -64,8 +67,10 @@ public class NavigationActivity extends AppCompatActivity {
                 Toast.makeText(this,R.string.action_parametres, Toast.LENGTH_LONG).show();
                 return true;
             case R.id.action_deconnexion:
+                session.logoutUser();
                 Intent deconnexionIntent = new Intent(NavigationActivity.this, LoginActivity.class);
                 startActivity(deconnexionIntent);
+                finish();
                 return true;
 
         }

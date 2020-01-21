@@ -39,7 +39,6 @@
         android:layout_height="44dp"
         android:layout_marginTop="244dp"
         android:background="@color/colorMagicMint"
-        android:onClick="signupDetail"
         android:text="Enregistrer"
         android:textColor="@color/colorWhite"
         android:textSize="20dp"

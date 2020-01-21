@@ -7,7 +7,6 @@
     android:weightSum="2"
     android:orientation="vertical"
     tools:context=".NavigationActivity">
-
     <fragment
         android:id="@+id/nav_host_fragment"
         android:name="androidx.navigation.fragment.NavHostFragment"

@@ -13,15 +13,19 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:paddingLeft="24dp"
-        android:paddingTop="56dp"
         android:paddingRight="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.338">
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/teddy"/>
+
         <EditText
-            android:id="@+id/input_username"
+            android:id="@+id/input_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -52,7 +56,7 @@
             android:textColor="@color/colorWhite"
             android:textSize="25dp"
             android:textStyle="bold"
-            android:onClick="login"
+
             />
 
         <LinearLayout

@@ -6,9 +6,49 @@
     tools:context=".menu_maman.Guide.fragments.TravailFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:background="@color/colorGrey"
+        android:orientation="vertical">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.3"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/travailgrossesse"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorWhite"
+        android:layout_weight="0.7">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Depuis, des travaux ont pourtant montré que le taux de prématurité était moins élevé quand la femme travaillait pendant sa grossesse. Ceci s’explique par la composition sociale des femmes en activité, explique l’épidémiologiste. Ainsi, les femmes qui ont un travail sont plus souvent en couple, elles ont fait des études plus longues et le revenu de leur foyer est généralement plus élevé. En outre, le milieu de travail constitue une source d’informations sur les risques pendant la grossesse et s’accompagne de consultations prénatales plus fréquentes. In fine, les femmes qui travaillent ont tendance à adopter moins souvent des comportements à risque ( tabagisme, consommation d’alcool, etc.) que celles qui sont au foyer."
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    </LinearLayout>
 </FrameLayout>
